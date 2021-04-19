@@ -54,6 +54,13 @@ public class Main {
         System.out.println("----FESTIVAL POSTER----");
         ((EventPromoter) f1).printEventPoster();
 
+
+        System.out.println("Comparing two skills:");
+        SkillComparator x = new SkillComparator();
+        if(x.compare(m1,m2) > 0) System.out.println("Superior");
+        else if(x.compare(m1,m2) < 0) System.out.println("Inferior");
+        else if (x.compare(m1,m2) == 0) System.out.println("Equal");
+
     }
 
 }
